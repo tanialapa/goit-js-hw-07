@@ -14,6 +14,8 @@ function getRandomHexColor() {
 }
 
 function handlerBtn(event) {
-  bodyBackground.style.backgroundColor = getRandomHexColor();
-  colorText.textContent = getRandomHexColor();
+  const color = getRandomHexColor();
+  
+  bodyBackground.style.backgroundColor = color;
+  colorText.textContent = color;
 }
